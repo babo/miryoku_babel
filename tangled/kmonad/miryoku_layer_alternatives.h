@@ -12,6 +12,24 @@ U_MT(q, met),      U_MT(s, alt),      U_MT(d, ctl),      U_MT(f, sft),      g,  
 U_LT(w, U_BUTTON), U_MT(x, ralt),     c,                 v,                 b,                 n,                 U_COMM,            .,                 U_MT(/, ralt),     U_LT(U_QUOT, U_BUTTON),\
 U_NP,              U_NP,              U_LT(del, U_FUN),  U_LT(bspc, U_NUM), U_LT(ent, U_SYM),  U_LT(tab, U_MOUSE),U_LT(spc, U_NAV),  U_LT(esc, U_MEDIA),U_NP,              U_NP
 
+#define MIRYOKU_ALTERNATIVES_BASE_APTMAK_FLIP \
+v,                 w,                 f,                 p,                 b,                 j,                 l,                 u,                 y,                 U_QUOT,            \
+U_MT(r, met),      U_MT(s, alt),      U_MT(t, ctl),      U_MT(h, sft),      k,                 e,                 U_MT(n, sft),      U_MT(a, ctl),      U_MT(i, alt),      U_MT(o, met),      \
+U_LT(x, U_BUTTON), U_MT(c, ralt),     g,                 d,                 q,                 z,                 m,                 U_COMM,            U_MT(., ralt),     U_LT(/, U_BUTTON), \
+U_NP,              U_NP,              U_LT(del, U_FUN),  U_LT(bspc, U_NUM), U_LT(ent, U_SYM),  U_LT(tab, U_MOUSE),U_LT(spc, U_NAV),  U_LT(esc, U_MEDIA),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_APTV3_FLIP \
+w,                 g,                 d,                 f,                 b,                 q,                 l,                 u,                 o,                 y,                 \
+U_MT(r, met),      U_MT(s, alt),      U_MT(t, ctl),      U_MT(h, sft),      k,                 j,                 U_MT(n, sft),      U_MT(e, ctl),      U_MT(a, alt),      U_MT(i, met),      \
+U_LT(x, U_BUTTON), U_MT(c, ralt),     m,                 p,                 v,                 z,                 U_COMM,            .,                 U_MT(U_QUOT, ralt),U_LT(/, U_BUTTON), \
+U_NP,              U_NP,              U_LT(del, U_FUN),  U_LT(bspc, U_NUM), U_LT(ent, U_SYM),  U_LT(tab, U_MOUSE),U_LT(spc, U_NAV),  U_LT(esc, U_MEDIA),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_APTV5_FLIP \
+w,                 c,                 g,                 d,                 U_QUOT,            x,                 l,                 u,                 o,                 y,                 \
+U_MT(r, met),      U_MT(s, alt),      U_MT(t, ctl),      U_MT(h, sft),      k,                 j,                 U_MT(n, sft),      U_MT(e, ctl),      U_MT(a, alt),      U_MT(i, met),      \
+U_LT(v, U_BUTTON), U_MT(b, ralt),     p,                 f,                 q,                 z,                 m,                 U_COMM,            U_MT(., ralt),     U_LT(/, U_BUTTON), \
+U_NP,              U_NP,              U_LT(del, U_FUN),  U_LT(bspc, U_NUM), U_LT(ent, U_SYM),  U_LT(tab, U_MOUSE),U_LT(spc, U_NAV),  U_LT(esc, U_MEDIA),U_NP,              U_NP
+
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP \
 q,                 h,                 o,                 u,                 x,                 g,                 c,                 r,                 f,                 z,                 \
 U_MT(y, met),      U_MT(i, alt),      U_MT(e, ctl),      U_MT(a, sft),      .,                 d,                 U_MT(s, sft),      U_MT(t, ctl),      U_MT(n, alt),      U_MT(b, met),      \
@@ -70,6 +88,24 @@ U_NP,              U_NP,              U_LT(del, U_FUN),  U_LT(bspc, U_NUM), U_LT
 a,                 z,                 e,                 r,                 t,                 y,                 u,                 i,                 o,                 p,                 \
 U_MT(q, met),      U_MT(s, alt),      U_MT(d, ctl),      U_MT(f, sft),      g,                 h,                 U_MT(j, sft),      U_MT(k, ctl),      U_MT(l, alt),      U_MT(m, met),      \
 U_LT(w, U_BUTTON), U_MT(x, ralt),     c,                 v,                 b,                 n,                 U_COMM,            .,                 U_MT(/, ralt),     U_LT(U_QUOT, U_BUTTON),\
+U_NP,              U_NP,              U_LT(esc, U_MEDIA),U_LT(spc, U_NAV),  U_LT(tab, U_MOUSE),U_LT(ent, U_SYM),  U_LT(bspc, U_NUM), U_LT(del, U_FUN),  U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_APTMAK \
+v,                 w,                 f,                 p,                 b,                 j,                 l,                 u,                 y,                 U_QUOT,            \
+U_MT(r, met),      U_MT(s, alt),      U_MT(t, ctl),      U_MT(h, sft),      k,                 e,                 U_MT(n, sft),      U_MT(a, ctl),      U_MT(i, alt),      U_MT(o, met),      \
+U_LT(x, U_BUTTON), U_MT(c, ralt),     g,                 d,                 q,                 z,                 m,                 U_COMM,            U_MT(., ralt),     U_LT(/, U_BUTTON), \
+U_NP,              U_NP,              U_LT(esc, U_MEDIA),U_LT(spc, U_NAV),  U_LT(tab, U_MOUSE),U_LT(ent, U_SYM),  U_LT(bspc, U_NUM), U_LT(del, U_FUN),  U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_APTV3 \
+w,                 g,                 d,                 f,                 b,                 q,                 l,                 u,                 o,                 y,                 \
+U_MT(r, met),      U_MT(s, alt),      U_MT(t, ctl),      U_MT(h, sft),      k,                 j,                 U_MT(n, sft),      U_MT(e, ctl),      U_MT(a, alt),      U_MT(i, met),      \
+U_LT(x, U_BUTTON), U_MT(c, ralt),     m,                 p,                 v,                 z,                 U_COMM,            .,                 U_MT(U_QUOT, ralt),U_LT(/, U_BUTTON), \
+U_NP,              U_NP,              U_LT(esc, U_MEDIA),U_LT(spc, U_NAV),  U_LT(tab, U_MOUSE),U_LT(ent, U_SYM),  U_LT(bspc, U_NUM), U_LT(del, U_FUN),  U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_APTV5 \
+w,                 c,                 g,                 d,                 U_QUOT,            x,                 l,                 u,                 o,                 y,                 \
+U_MT(r, met),      U_MT(s, alt),      U_MT(t, ctl),      U_MT(h, sft),      k,                 j,                 U_MT(n, sft),      U_MT(e, ctl),      U_MT(a, alt),      U_MT(i, met),      \
+U_LT(v, U_BUTTON), U_MT(b, ralt),     p,                 f,                 q,                 z,                 m,                 U_COMM,            U_MT(., ralt),     U_LT(/, U_BUTTON), \
 U_NP,              U_NP,              U_LT(esc, U_MEDIA),U_LT(spc, U_NAV),  U_LT(tab, U_MOUSE),U_LT(ent, U_SYM),  U_LT(bspc, U_NUM), U_LT(del, U_FUN),  U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15 \
@@ -133,6 +169,24 @@ q,                 s,                 d,                 f,                 g,  
 w,                 x,                 c,                 v,                 b,                 n,                 U_COMM,            .,                 /,                 U_QUOT,            \
 U_NP,              U_NP,              del,               bspc,              ent,               tab,               spc,               esc,               U_NP,              U_NP
 
+#define MIRYOKU_ALTERNATIVES_TAP_APTMAK_FLIP \
+v,                 w,                 f,                 p,                 b,                 j,                 l,                 u,                 y,                 U_QUOT,            \
+r,                 s,                 t,                 h,                 k,                 e,                 n,                 a,                 i,                 o,                 \
+x,                 c,                 g,                 d,                 q,                 z,                 m,                 U_COMM,            .,                 /,                 \
+U_NP,              U_NP,              del,               bspc,              ent,               tab,               spc,               esc,               U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_TAP_APTV3_FLIP \
+w,                 g,                 d,                 f,                 b,                 q,                 l,                 u,                 o,                 y,                 \
+r,                 s,                 t,                 h,                 k,                 j,                 n,                 e,                 a,                 i,                 \
+x,                 c,                 m,                 p,                 v,                 z,                 U_COMM,            .,                 U_QUOT,            /,                 \
+U_NP,              U_NP,              del,               bspc,              ent,               tab,               spc,               esc,               U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_TAP_APTV5_FLIP \
+w,                 c,                 g,                 d,                 U_QUOT,            x,                 l,                 u,                 o,                 y,                 \
+r,                 s,                 t,                 h,                 k,                 j,                 n,                 e,                 a,                 i,                 \
+v,                 b,                 p,                 f,                 q,                 z,                 m,                 U_COMM,            .,                 /,                 \
+U_NP,              U_NP,              del,               bspc,              ent,               tab,               spc,               esc,               U_NP,              U_NP
+
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15_FLIP \
 q,                 h,                 o,                 u,                 x,                 g,                 c,                 r,                 f,                 z,                 \
 y,                 i,                 e,                 a,                 .,                 d,                 s,                 t,                 n,                 b,                 \
@@ -191,6 +245,24 @@ U_NP,              U_NP,              del,               bspc,              ent,
 a,                 z,                 e,                 r,                 t,                 y,                 u,                 i,                 o,                 p,                 \
 q,                 s,                 d,                 f,                 g,                 h,                 j,                 k,                 l,                 m,                 \
 w,                 x,                 c,                 v,                 b,                 n,                 U_COMM,            .,                 /,                 U_QUOT,            \
+U_NP,              U_NP,              esc,               spc,               tab,               ent,               bspc,              del,               U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_TAP_APTMAK \
+v,                 w,                 f,                 p,                 b,                 j,                 l,                 u,                 y,                 U_QUOT,            \
+r,                 s,                 t,                 h,                 k,                 e,                 n,                 a,                 i,                 o,                 \
+x,                 c,                 g,                 d,                 q,                 z,                 m,                 U_COMM,            .,                 /,                 \
+U_NP,              U_NP,              esc,               spc,               tab,               ent,               bspc,              del,               U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_TAP_APTV3 \
+w,                 g,                 d,                 f,                 b,                 q,                 l,                 u,                 o,                 y,                 \
+r,                 s,                 t,                 h,                 k,                 j,                 n,                 e,                 a,                 i,                 \
+x,                 c,                 m,                 p,                 v,                 z,                 U_COMM,            .,                 U_QUOT,            /,                 \
+U_NP,              U_NP,              esc,               spc,               tab,               ent,               bspc,              del,               U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_TAP_APTV5 \
+w,                 c,                 g,                 d,                 U_QUOT,            x,                 l,                 u,                 o,                 y,                 \
+r,                 s,                 t,                 h,                 k,                 j,                 n,                 e,                 a,                 i,                 \
+v,                 b,                 p,                 f,                 q,                 z,                 m,                 U_COMM,            .,                 /,                 \
 U_NP,              U_NP,              esc,               spc,               tab,               ent,               bspc,              del,               U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15 \
