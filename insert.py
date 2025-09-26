@@ -6,11 +6,15 @@ def main():
 
     ch = []
     tmp = []
-    for i,l in enumerate(raw):
-        if i > 300:
+    skip_until = True
+    for l in raw:
+        if skip_until:
+            if l.startswith('**** layer-body'):
+                skip_until = False
+        else:
             if 'BEAKL15' in l or 'beakl15' in l:
                 tmp.append(l)
-                l = l.replace('BEAKL15', 'BIRD').replace('beakl15', 'bird')
+                l = l.replace('BEAKL15', 'GALLIUM').replace('beakl15', 'gallium')
             elif tmp:
                 if not l.strip():
                     ch.append(l)
