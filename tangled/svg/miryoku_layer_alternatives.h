@@ -36,6 +36,12 @@ U_MT("R", "Meta"), U_MT("S", "Alt"),  U_MT("N", "Ctrl"), U_MT("T", "Shift"),"P",
 U_LT("Q", U_BUTTON),U_MT("W", "AltGr"),"M",               "G",               "B",               "J",               "D",               U_S("<", "S_COMM"),U_SMT(">", ".", "AltGr"),U_SLT("?", "/", U_BUTTON),\
 U_NP,              U_NP,              U_LT("Delete", U_FUN),U_LT("Back Space", U_NUM),U_LT("Enter", U_SYM),U_LT("Tab", U_MOUSE),U_LT("Space", U_NAV),U_LT("Esc", U_MEDIA),U_NP,              U_NP
 
+#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM_FLIP \
+"B",               "L",               "D",               "C",               "V",               "Z",               "Y",               "O",               "U",               U_S("<", "S_COMM"),\
+U_MT("N", "Meta"), U_MT("R", "Alt"),  U_MT("T", "Ctrl"), U_MT("S", "Shift"),"G",               "P",               U_MT("H", "Shift"),U_MT("A", "Ctrl"), U_MT("E", "Alt"),  U_MT("I", "Meta"), \
+U_LT("Q", U_BUTTON),U_MT("X", "AltGr"),"M",               "W",               "J",               "K",               "F",               U_S("\"", "'"),    U_SMT(":", ";", "AltGr"),U_SLT(">", ".", U_BUTTON),\
+U_NP,              U_NP,              U_LT("Delete", U_FUN),U_LT("Back Space", U_NUM),U_LT("Enter", U_SYM),U_LT("Tab", U_MOUSE),U_LT("Space", U_NAV),U_LT("Esc", U_MEDIA),U_NP,              U_NP
+
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP \
 "Q",               "H",               "O",               "U",               "X",               "G",               "C",               "R",               "F",               "Z",               \
 U_MT("Y", "Meta"), U_MT("I", "Alt"),  U_MT("E", "Ctrl"), U_MT("A", "Shift"),U_S(">", "."),     "D",               U_MT("S", "Shift"),U_MT("T", "Ctrl"), U_MT("N", "Alt"),  U_MT("B", "Meta"), \
@@ -118,6 +124,12 @@ U_NP,              U_NP,              U_LT("Esc", U_MEDIA),U_LT("Space", U_NAV),
 "X",               "C",               "L",               "F",               "V",               "Z",               "Y",               "O",               "U",               U_S("\"", "'"),    \
 U_MT("R", "Meta"), U_MT("S", "Alt"),  U_MT("N", "Ctrl"), U_MT("T", "Shift"),"P",               "K",               U_MT("H", "Shift"),U_MT("E", "Ctrl"), U_MT("I", "Alt"),  U_MT("A", "Meta"), \
 U_LT("Q", U_BUTTON),U_MT("W", "AltGr"),"M",               "G",               "B",               "J",               "D",               U_S("<", "S_COMM"),U_SMT(">", ".", "AltGr"),U_SLT("?", "/", U_BUTTON),\
+U_NP,              U_NP,              U_LT("Esc", U_MEDIA),U_LT("Space", U_NAV),U_LT("Tab", U_MOUSE),U_LT("Enter", U_SYM),U_LT("Back Space", U_NUM),U_LT("Delete", U_FUN),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM \
+"B",               "L",               "D",               "C",               "V",               "Z",               "Y",               "O",               "U",               U_S("<", "S_COMM"),\
+U_MT("N", "Meta"), U_MT("R", "Alt"),  U_MT("T", "Ctrl"), U_MT("S", "Shift"),"G",               "P",               U_MT("H", "Shift"),U_MT("A", "Ctrl"), U_MT("E", "Alt"),  U_MT("I", "Meta"), \
+U_LT("Q", U_BUTTON),U_MT("X", "AltGr"),"M",               "W",               "J",               "K",               "F",               U_S("\"", "'"),    U_SMT(":", ";", "AltGr"),U_SLT(">", ".", U_BUTTON),\
 U_NP,              U_NP,              U_LT("Esc", U_MEDIA),U_LT("Space", U_NAV),U_LT("Tab", U_MOUSE),U_LT("Enter", U_SYM),U_LT("Back Space", U_NUM),U_LT("Delete", U_FUN),U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15 \
@@ -205,6 +217,12 @@ U_NP,              U_NP,              "Delete",          "Back Space",      "Ent
 "Q",               "W",               "M",               "G",               "B",               "J",               "D",               "S_COMM",          ".",               "/",               \
 U_NP,              U_NP,              "Delete",          "Back Space",      "Enter",           "Tab",             "Space",           "Esc",             U_NP,              U_NP
 
+#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM_FLIP \
+"B",               "L",               "D",               "C",               "V",               "Z",               "Y",               "O",               "U",               "S_COMM",          \
+"N",               "R",               "T",               "S",               "G",               "P",               "H",               "A",               "E",               "I",               \
+"Q",               "X",               "M",               "W",               "J",               "K",               "F",               "'",               ";",               ".",               \
+U_NP,              U_NP,              "Delete",          "Back Space",      "Enter",           "Tab",             "Space",           "Esc",             U_NP,              U_NP
+
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15_FLIP \
 "Q",               "H",               "O",               "U",               "X",               "G",               "C",               "R",               "F",               "Z",               \
 "Y",               "I",               "E",               "A",               ".",               "D",               "S",               "T",               "N",               "B",               \
@@ -287,6 +305,12 @@ U_NP,              U_NP,              "Esc",             "Space",           "Tab
 "X",               "C",               "L",               "F",               "V",               "Z",               "Y",               "O",               "U",               "'",               \
 "R",               "S",               "N",               "T",               "P",               "K",               "H",               "E",               "I",               "A",               \
 "Q",               "W",               "M",               "G",               "B",               "J",               "D",               "S_COMM",          ".",               "/",               \
+U_NP,              U_NP,              "Esc",             "Space",           "Tab",             "Enter",           "Back Space",      "Delete",          U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM \
+"B",               "L",               "D",               "C",               "V",               "Z",               "Y",               "O",               "U",               "S_COMM",          \
+"N",               "R",               "T",               "S",               "G",               "P",               "H",               "A",               "E",               "I",               \
+"Q",               "X",               "M",               "W",               "J",               "K",               "F",               "'",               ";",               ".",               \
 U_NP,              U_NP,              "Esc",             "Space",           "Tab",             "Enter",           "Back Space",      "Delete",          U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15 \
