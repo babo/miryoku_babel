@@ -269,6 +269,16 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | /    | Q    | J    | K    | X    | B    | M    | W    | V    | Z    |
 
 
+***** Dvorak
+
+~MIRYOKU_ALPHAS=GALLIUM~
+
+#+NAME: gallium
+| B    | L    | D    | C    | V    | Z    | Y    | O    | U    | ,    |
+| N    | R    | T    | S    | G    | P    | H    | A    | E    | I    |
+| Q    | X    | M    | W    | J    | K    | F    | '    | ;    | DOT  |
+
+
 ***** Halmak
 
 ~MIRYOKU_ALPHAS=HALMAK~
@@ -1084,6 +1094,8 @@ Body of miryoku_layer_selection.h.
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_APTV5_FLIP
     #elif defined (MIRYOKU_ALPHAS_BIRD)
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_BIRD_FLIP
+    #elif defined (MIRYOKU_ALPHAS_GALLIUM)
+      #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_GALLIUM_FLIP
     #elif defined (MIRYOKU_ALPHAS_BEAKL15)
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP
     #elif defined (MIRYOKU_ALPHAS_COLEMAK)
@@ -1116,6 +1128,8 @@ Body of miryoku_layer_selection.h.
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_APTV5
     #elif defined (MIRYOKU_ALPHAS_BIRD)
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_BIRD
+    #elif defined (MIRYOKU_ALPHAS_GALLIUM)
+      #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_GALLIUM
     #elif defined (MIRYOKU_ALPHAS_BEAKL15)
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_BEAKL15
     #elif defined (MIRYOKU_ALPHAS_COLEMAK)
@@ -1155,6 +1169,8 @@ Body of miryoku_layer_selection.h.
       #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_APTV5_FLIP
     #elif defined (MIRYOKU_EXTRA_BIRD)
       #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_BIRD_FLIP
+    #elif defined (MIRYOKU_EXTRA_GALLIUM)
+      #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_GALLIUM_FLIP
     #elif defined (MIRYOKU_EXTRA_BEAKL15)
       #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP
     #elif defined (MIRYOKU_EXTRA_COLEMAK)
@@ -1187,6 +1203,8 @@ Body of miryoku_layer_selection.h.
       #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_APTV5
     #elif defined (MIRYOKU_EXTRA_BIRD)
       #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_BIRD
+    #elif defined (MIRYOKU_EXTRA_GALLIUM)
+      #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_GALLIUM
     #elif defined (MIRYOKU_EXTRA_BEAKL15)
       #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_BEAKL15
     #elif defined (MIRYOKU_EXTRA_COLEMAK)
@@ -1226,6 +1244,8 @@ Body of miryoku_layer_selection.h.
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_APTV5_FLIP
     #elif defined (MIRYOKU_TAP_BIRD)
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_BIRD_FLIP
+    #elif defined (MIRYOKU_TAP_GALLIUM)
+      #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_GALLIUM_FLIP
     #elif defined (MIRYOKU_TAP_BEAKL15)
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_BEAKL15_FLIP
     #elif defined (MIRYOKU_TAP_COLEMAK)
@@ -1258,6 +1278,8 @@ Body of miryoku_layer_selection.h.
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_APTV5
     #elif defined (MIRYOKU_TAP_BIRD)
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_BIRD
+    #elif defined (MIRYOKU_TAP_GALLIUM)
+      #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_GALLIUM
     #elif defined (MIRYOKU_TAP_BEAKL15)
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_BEAKL15
     #elif defined (MIRYOKU_TAP_COLEMAK)
@@ -1556,6 +1578,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_BASE_BIRD_FLIP \
 <<table-layer-taphold(alphas_table=bird, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
+#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM_FLIP \
+<<table-layer-taphold(alphas_table=gallium, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP \
 <<table-layer-taphold(alphas_table=beakl15, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
@@ -1597,6 +1622,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_BASE_BIRD \
 <<table-layer-taphold(alphas_table=bird)>>
+
+#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM \
+<<table-layer-taphold(alphas_table=gallium)>>
 
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15 \
 <<table-layer-taphold(alphas_table=beakl15)>>
@@ -1641,6 +1669,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_TAP_BIRD_FLIP \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=bird, thumbs_table=thumbs-flip)>>
 
+#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM_FLIP \
+<<table-layer-full(current_layer_name="U_TAP", alphas_table=gallium, thumbs_table=thumbs-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15_FLIP \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=beakl15, thumbs_table=thumbs-flip)>>
 
@@ -1682,6 +1713,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_TAP_BIRD \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=bird, thumbs_table=thumbs)>>
+
+#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM \
+<<table-layer-full(current_layer_name="U_TAP", alphas_table=gallium, thumbs_table=thumbs)>>
 
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15 \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=beakl15, thumbs_table=thumbs)>>
@@ -1847,6 +1881,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_BASE_BIRD_FLIP \
 <<table-layer-taphold(alphas_table=bird, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
+#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM_FLIP \
+<<table-layer-taphold(alphas_table=gallium, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP \
 <<table-layer-taphold(alphas_table=beakl15, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
@@ -1888,6 +1925,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_BASE_BIRD \
 <<table-layer-taphold(alphas_table=bird)>>
+
+#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM \
+<<table-layer-taphold(alphas_table=gallium)>>
 
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15 \
 <<table-layer-taphold(alphas_table=beakl15)>>
@@ -1932,6 +1972,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_TAP_BIRD_FLIP \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=bird, thumbs_table=thumbs-flip)>>
 
+#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM_FLIP \
+<<table-layer-full(current_layer_name="U_TAP", alphas_table=gallium, thumbs_table=thumbs-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15_FLIP \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=beakl15, thumbs_table=thumbs-flip)>>
 
@@ -1973,6 +2016,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_TAP_BIRD \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=bird, thumbs_table=thumbs)>>
+
+#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM \
+<<table-layer-full(current_layer_name="U_TAP", alphas_table=gallium, thumbs_table=thumbs)>>
 
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15 \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=beakl15, thumbs_table=thumbs)>>
@@ -2135,6 +2181,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_BASE_BIRD_FLIP \
 <<table-layer-taphold(alphas_table=bird, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
+#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM_FLIP \
+<<table-layer-taphold(alphas_table=gallium, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP \
 <<table-layer-taphold(alphas_table=beakl15, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
@@ -2176,6 +2225,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_BASE_BIRD \
 <<table-layer-taphold(alphas_table=bird)>>
+
+#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM \
+<<table-layer-taphold(alphas_table=gallium)>>
 
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15 \
 <<table-layer-taphold(alphas_table=beakl15)>>
@@ -2220,6 +2272,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_TAP_BIRD_FLIP \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=bird, thumbs_table=thumbs-flip)>>
 
+#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM_FLIP \
+<<table-layer-full(current_layer_name="U_TAP", alphas_table=gallium, thumbs_table=thumbs-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15_FLIP \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=beakl15, thumbs_table=thumbs-flip)>>
 
@@ -2261,6 +2316,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_TAP_BIRD \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=bird, thumbs_table=thumbs)>>
+
+#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM \
+<<table-layer-full(current_layer_name="U_TAP", alphas_table=gallium, thumbs_table=thumbs)>>
 
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15 \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=beakl15, thumbs_table=thumbs)>>
@@ -2422,6 +2480,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_BASE_BIRD_FLIP \
 <<table-layer-taphold(alphas_table=bird, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
+#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM_FLIP \
+<<table-layer-taphold(alphas_table=gallium, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP \
 <<table-layer-taphold(alphas_table=beakl15, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
@@ -2463,6 +2524,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_BASE_BIRD \
 <<table-layer-taphold(alphas_table=bird)>>
+
+#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM \
+<<table-layer-taphold(alphas_table=gallium)>>
 
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15 \
 <<table-layer-taphold(alphas_table=beakl15)>>
@@ -2507,6 +2571,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_TAP_BIRD_FLIP \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=bird, thumbs_table=thumbs-flip)>>
 
+#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM_FLIP \
+<<table-layer-full(current_layer_name="U_TAP", alphas_table=gallium, thumbs_table=thumbs-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15_FLIP \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=beakl15, thumbs_table=thumbs-flip)>>
 
@@ -2548,6 +2615,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_TAP_BIRD \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=bird, thumbs_table=thumbs)>>
+
+#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM \
+<<table-layer-full(current_layer_name="U_TAP", alphas_table=gallium, thumbs_table=thumbs)>>
 
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15 \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=beakl15, thumbs_table=thumbs)>>
@@ -2711,6 +2781,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_BASE_BIRD_FLIP \
 <<table-layer-taphold(alphas_table=bird, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
+#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM_FLIP \
+<<table-layer-taphold(alphas_table=gallium, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP \
 <<table-layer-taphold(alphas_table=beakl15, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
@@ -2752,6 +2825,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_BASE_BIRD \
 <<table-layer-taphold(alphas_table=bird)>>
+
+#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM \
+<<table-layer-taphold(alphas_table=gallium)>>
 
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15 \
 <<table-layer-taphold(alphas_table=beakl15)>>
@@ -2796,6 +2872,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_TAP_BIRD_FLIP \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=bird, thumbs_table=thumbs-flip)>>
 
+#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM_FLIP \
+<<table-layer-full(current_layer_name="U_TAP", alphas_table=gallium, thumbs_table=thumbs-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15_FLIP \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=beakl15, thumbs_table=thumbs-flip)>>
 
@@ -2837,6 +2916,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_TAP_BIRD \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=bird, thumbs_table=thumbs)>>
+
+#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM \
+<<table-layer-full(current_layer_name="U_TAP", alphas_table=gallium, thumbs_table=thumbs)>>
 
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15 \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=beakl15, thumbs_table=thumbs)>>
