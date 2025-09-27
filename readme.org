@@ -269,7 +269,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | /    | Q    | J    | K    | X    | B    | M    | W    | V    | Z    |
 
 
-***** Dvorak
+***** Gallium
 
 ~MIRYOKU_ALPHAS=GALLIUM~
 
