@@ -274,9 +274,9 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 ~MIRYOKU_ALPHAS=GALLIUM~
 
 #+NAME: gallium
-| B    | L    | D    | C    | V    | Z    | Y    | O    | U    | ,    |
+| B    | L    | D    | C    | V    | J    | Y    | O    | U    | ,    |
 | N    | R    | T    | S    | G    | P    | H    | A    | E    | I    |
-| Q    | X    | M    | W    | J    | K    | F    | '    | /    | DOT  |
+| X    | Q    | M    | W    | Z    | K    | F    | '    | /    | DOT  |
 
 
 ***** Halmak
