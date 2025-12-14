@@ -276,7 +276,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 #+NAME: gallium
 | B    | L    | D    | C    | V    | J    | Y    | O    | U    | ,    |
 | N    | R    | T    | S    | G    | P    | H    | A    | E    | I    |
-| X    | Q    | M    | W    | Z    | K    | F    | '    | /    | DOT  |
+| Q    | X    | M    | W    | Z    | K    | F    | '    | /    | DOT  |
 
 
 ***** Halmak
